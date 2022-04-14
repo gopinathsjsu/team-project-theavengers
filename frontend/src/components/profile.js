@@ -221,15 +221,5 @@ class CustomerProfile extends React.Component{
         )
     }
 }
-const mapStateToProps = (state) =>{
-    //console.log(state);
-    return {
-        customerDetails:state.customerLoginReducer.customerLogin
-    }
-}
-function mapDispatchToProps(dispatch) {
-    return {
-        updateCustomerProfile:data=>dispatch(updateCustomerProfile(data))
-    };
-  }
-export default connect(mapStateToProps,mapDispatchToProps)(CustomerProfile);
+
+export default CustomerProfile;
