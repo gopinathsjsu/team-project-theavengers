@@ -15,13 +15,13 @@ function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
-  const logout1 = () =>{
-    localStorage.removeItem("token");
-    localStorage.removeItem("user_id");
-    localStorage.removeItem("username");
-    localStorage.removeItem("type1");
-    dispatch(logout());
-}
+//   const logout1 = () =>{
+//     localStorage.removeItem("token");
+//     localStorage.removeItem("user_id");
+//     localStorage.removeItem("username");
+//     localStorage.removeItem("type1");
+//     dispatch(logout());
+// }
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
