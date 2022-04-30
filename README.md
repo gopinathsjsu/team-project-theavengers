@@ -9,6 +9,6 @@ Team Members:
 4. Sarat Kumar Kaniti
 
 ## Tech Stack
-Frontend - React.js
-Backend - Node.js
-Database - Mongo DB & MYSQL
+* Frontend - React.js
+* Backend - Node.js
+* Database - Mongo DB & MYSQL
