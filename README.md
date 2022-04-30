@@ -7,3 +7,8 @@ Team Members:
 2. Sri Harshini Komali
 3. Saketh Gali
 4. Sarat Kumar Kaniti
+
+## Tech Stack
+Frontend - React.js
+Backend - Node.js
+Database - Mongo DB & MYSQL
