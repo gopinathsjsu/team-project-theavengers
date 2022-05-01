@@ -113,18 +113,12 @@ class RestaurantMenu extends React.Component{
                 <table>
                     <tbody>
                 <tr>
-                    <td>Dish Name</td>
+                    <td>Hotel Name</td>
                     <td>:</td>
                     <input required type="text" name="DishName" className="form-control" value={this.state.DishName} onChange={this.handleChange}/>
                 </tr>
                 <tr>
-                    <td>Main Ingredients</td>
-                    <td>:</td>
-                    <textarea required name="MainIngredients" className="form-control" cols={30} rows={2} value={this.state.MainIngredients} onChange={this.handleChange}/>
-                                       
-                </tr>
-                <tr>
-                    <td>Dish Price</td>
+                    <td>Hotel Price</td>
                     <td>:</td>
                     <input required type="number" name="DishPrice" className="form-control" value={this.state.DishPrice} onChange={this.handleChange}/>
                 </tr>
@@ -135,7 +129,7 @@ class RestaurantMenu extends React.Component{
                                        
                 </tr>
                 <tr>
-                    <td>Dish Category</td>
+                    <td>Hotel Category</td>
                     <td>:</td>
                     <td>
                         <select  class="form-select form-select-lg mb-3" name="DishCategory" style={{width:"210px"}} value={this.state.DishCategory} onChange={this.handleChange}>
@@ -146,7 +140,7 @@ class RestaurantMenu extends React.Component{
                     </td>
                 </tr>
                 <tr>
-                    <td>Dish Type</td>
+                    <td>Hotel Type</td>
                     <td>:</td>
                     <td>
                         <select class="form-select form-select-lg mb-3" name="DishType" style={{width:"150px"}} value={this.state.DishType} onChange={this.handleChange}>
