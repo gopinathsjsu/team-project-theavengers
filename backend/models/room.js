@@ -10,6 +10,7 @@ const RoomSchema = new Schema({
         type: String,
         required: [true, 'Room number is required']
     },
+
     type: {
         type: String,
         required: [true, 'Please specify room type']
@@ -26,6 +27,7 @@ const RoomSchema = new Schema({
         type: Date,
         default: Date.now
     }
+    
 });
 
 const Room = mongoose.model('Room', RoomSchema);

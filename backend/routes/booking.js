@@ -34,6 +34,7 @@ router.delete('/bookings/:id', (req, res, next) => {
     .then( booking => {
         res.send(booking);
     });
+    
 });
 
 module.exports = router;

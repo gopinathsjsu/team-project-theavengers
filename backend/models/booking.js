@@ -9,6 +9,7 @@ const user = require('./userModel');
 const BookingSchema = new Schema({
     hotel: {
         type: String
+
     },
     checkin: {
         type: Date,
@@ -29,6 +30,7 @@ const BookingSchema = new Schema({
     nights: {
         type: Number,
         required: [true, 'Number of nights is required']
+
     },
     adults: {
         type: Number
@@ -41,6 +43,7 @@ const BookingSchema = new Schema({
         type: Date,
         default: Date.now
     }
+    
 });
 
 const Booking = mongoose.model('Booking', BookingSchema);

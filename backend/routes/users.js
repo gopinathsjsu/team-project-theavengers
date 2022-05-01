@@ -35,6 +35,7 @@ router.delete('/users/:id', (req, res, next) => {
     .then( user => {
         res.send(user);
     });
+    
 });
 
 module.exports = router;

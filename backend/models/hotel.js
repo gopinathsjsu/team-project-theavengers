@@ -9,6 +9,7 @@ const HotelSchema = new Schema({
         type: String,
         required: [true, 'Hotel name is required']
     },
+
     stars: {
         type: Number
     },
@@ -18,6 +19,7 @@ const HotelSchema = new Schema({
     },
     rooms: [{type: Schema.Types.ObjectId, ref: 'Room'}]
 });
+
 
 const Hotel = mongoose.model('Hotel', HotelSchema);
 

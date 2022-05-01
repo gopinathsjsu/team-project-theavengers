@@ -40,6 +40,7 @@ router.delete('/hotels/:id', (req, res, next) => {
     .then( hotel => {
         res.send(hotel);
     });
+    
 });
 
 module.exports = router;
