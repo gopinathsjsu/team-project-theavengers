@@ -103,6 +103,31 @@ class RestaurantMenu extends React.Component{
             changedAttributes:{}
         })
     }
+
+    uploadHotelImage=(e)=>{
+        let details=this.props.customerDetails;
+        const file=e.target.files[0];
+        const imagesRef=firebase.storage().ref("customerImages").child(this.props.customerDetails.CustomerID);
+        imagesRef.put(file);
+        imagesRef.getDownloadURL()
+        .then(url=>{
+            this.setState({ImageUrl:url});
+            let data={
+                customerID:this.props.customerDetails.CustomerID
+            };
+            data["ImageURL"]=url;
+            details["ImageURL"]=url;
+            Axios.defaults.headers.common['authorization'] = localStorage.getItem('token');
+            Axios.post(`${config.BackendURL}/updateCustomerProfile`,data)
+            .then(async (res)=>{
+                //console.log("Update Successful");
+                this.props.updateCustomerProfile(details);
+            })
+            .catch(err=>{
+                console.log("Error");
+            })
+        });
+    }
     handleChange= (e) =>{
         this.setState({[e.target.name]:e.target.value,changedAttributes:{...this.state.changedAttributes,[e.target.name]:true}});
     }

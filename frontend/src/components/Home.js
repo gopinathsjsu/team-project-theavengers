@@ -24,7 +24,6 @@ class Home extends React.Component{
                         </div>
                     </div>
                     <div className="row" style={{paddingTop:"100px"}}>
-                        <
                         <div className="col-md-4 ">
                         <a href='/restaurantLogin'><Card style={{ width: '18rem',borderColor:"black",borderWidth:"2px" }}>
                             <Card.Img variant="top" src={RestaurantImage} />
