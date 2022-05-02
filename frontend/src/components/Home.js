@@ -24,14 +24,7 @@ class Home extends React.Component{
                         </div>
                     </div>
                     <div className="row" style={{paddingTop:"100px"}}>
-                        <div className="col-md-4 offset-md-2">
-                            <a href='/customerLogin'><Card style={{ width: '18rem',borderColor:"black",borderWidth:"2px"}}>
-                            <Card.Img variant="top" src={CustomerImage} />
-                            <Card.Body>
-                                <Card.Title style={{textAlign:"center"}}>Customer Login</Card.Title>
-                            </Card.Body>
-                            </Card></a>
-                        </div>
+                        <
                         <div className="col-md-4 ">
                         <a href='/restaurantLogin'><Card style={{ width: '18rem',borderColor:"black",borderWidth:"2px" }}>
                             <Card.Img variant="top" src={RestaurantImage} />
