@@ -1,7 +1,7 @@
 const initialState={};
 
 export default function customerLoginReducer(state=initialState,action){
-    //console.log("Reducer CustomerLogin",action,state);
+    console.log("Reducer CustomerLogin",action,state);
     switch(action.type){
         case "CUSTOMER_LOGIN":
             return {...state,customerLogin:action.payload};
