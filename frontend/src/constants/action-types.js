@@ -1,0 +1,2 @@
+export const HOTEL_SEARCH="HOTEL_SEARCH";
+export const HOTEL_FILTER="HOTEL_FILTER";
