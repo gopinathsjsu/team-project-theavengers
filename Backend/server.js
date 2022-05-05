@@ -31,7 +31,7 @@ mongoose.connect(mongoDB, options, (err, res) => {
 });
 
 //routes
-const User_Route = require("./routes/User_Routes");
+const User_Route = require("./routes/user_routes");
 app.use(User_Route);
 const PORT = process.env.PORT || 8080;
 app.listen(PORT,() => {
