@@ -5,7 +5,7 @@ const Schema=mongoose.Schema;
 
 //Creating user schema and model
 
-const UserSchema =new Schema({
+const userSchema =new Schema({
 
 	firstName:{
 		type:String,
@@ -37,7 +37,7 @@ const UserSchema =new Schema({
 	}
 });
 
-const User = mongoose.model('User',UserSchema);
+const User = mongoose.model('User',userSchema);
 
 module.exports=User;
 
