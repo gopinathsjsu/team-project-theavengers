@@ -10,7 +10,7 @@ export class customerLogin extends Component {
         this.state={
                 email:"",
                 password:"",
-                loginError:""
+                loginError:null
         }
 
         this.handleChange = this.handleChange.bind(this);
