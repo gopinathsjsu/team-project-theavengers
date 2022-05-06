@@ -58,3 +58,41 @@ exports.signIn=(req,res)=>{
         });
     });
 };
+exports.updateProfile = (req,res) => {
+	User.findOne({
+		email:req.body.email
+	})
+		.exec((err,user) => {
+			if(err){
+				res.status(500).send({message:err});
+				return;
+			}
+			if(!user) {
+				return res.status(404).send({message:"User not found"});
+			}
+			if(req.body.firstname){
+				user.firstName = req.body.firstname;
+			}
+			if(req.body.lastname){
+				user.lastName = req.body.lastname;
+			}
+			if(req.body.dob){
+				user.dob = req.body.dob;
+			}
+			if(req.body.mobile){
+				user.mobile = req.body.mobile;
+			}
+			if(req.body.password){
+				user.password = bcrypt.hashSync(req.body.password,10);
+			}
+			user.save((err) => {
+				if(err) {
+					res.status(500).send({message:err});
+					return;
+				}
+				res.send({message:"Details updated successfully"});
+			});
+		});
+		
+
+};
