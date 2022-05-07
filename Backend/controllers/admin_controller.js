@@ -25,3 +25,6 @@ exports.addHotel=(req,res)=>{
         });
     }
 };
+
+exports.deleteHotel = (req,res) => {
+};
