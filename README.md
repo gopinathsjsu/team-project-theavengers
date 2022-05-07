@@ -12,3 +12,5 @@ Team Members:
 * Frontend - React.js
 * Backend - Node.js
 * Database - Mongo DB & MYSQL
+
+Project Board: https://github.com/orgs/gopinathsjsu/projects/20
