@@ -4,5 +4,6 @@ const router = express();
 
 //Admin adds hotel
 router.post('/addhotel',controller.addHotel);
+router.post('/deletehotel',controller.deleteHotel);
 
 module.exports = router;
