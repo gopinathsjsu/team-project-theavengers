@@ -27,4 +27,21 @@ exports.addHotel=(req,res)=>{
 };
 
 exports.deleteHotel = (req,res) => {
+    Hotel.findOne({
+        name:req.body.name,
+        city:req.body.city,
+        state:req.body.city,
+        country:req.body.country
+    })
+    .exec((err,hotel) => {
+        if(err) {
+            res.status(500).send({message:err});
+            return;
+        }
+        if(!hotel) {
+            return res.status(404).send({message:"Hotel not found"});
+        }
+        Hotel.findOneAndRemove({_id:hotel._id});
+        return res.status(200).send({message:"Hotel removed successfully"});
+    });
 };
