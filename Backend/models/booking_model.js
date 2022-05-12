@@ -22,6 +22,9 @@ const bookingSchema= new Schema({
         type:String,
         required:[true,'Hotel Name is required']
     },
+    payment_id: {
+        required: [true,'Payment id is required']
+    },
     booking_date:{
         type:Date,
         required:[true,'Booking date is required.']
