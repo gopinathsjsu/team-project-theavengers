@@ -14,3 +14,6 @@ Team Members:
 * Database - Mongo DB & MYSQL
 
 Project Board: https://github.com/orgs/gopinathsjsu/projects/20
+
+## Architecture Diagram
+
