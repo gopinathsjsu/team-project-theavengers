@@ -27,6 +27,12 @@ const userSchema =new Schema({
 	dob:{
 		type:String
 	},
+	rewardPoints:{
+		type:String
+	},
+	member:{
+		type:String
+	},
 	mobile:{
 		type:String,
 		required:[true,'Mobile number is required']
