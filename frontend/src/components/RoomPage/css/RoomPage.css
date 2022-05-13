@@ -54,7 +54,33 @@
 {
 	color: #ffffff;
 }
-
+.rooms_list
+{
+	margin-top: 36px;
+}
+.rooms_list ul li:not(:last-of-type)
+{
+	margin-bottom: 14px;
+}
+.rooms_list ul li img
+{
+	margin-right: 22px;
+}
+.rooms_list ul li span
+{
+	font-size: 15px;
+	font-weight: 400;
+	color: #4a4f59;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.card-special .rooms_list ul li span
+{
+	color: #ffffff;
+}
 .rooms_button
 {
 	margin-top: 41px;
