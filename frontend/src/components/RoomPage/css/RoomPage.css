@@ -1,0 +1,61 @@
+.card
+{
+	border: none;
+	border-radius: 0px;
+}
+.card-img-top
+{
+	border-radius: 0px;
+}
+.card-body
+{
+	background: #f4f5fa;
+	padding-left: 80px;
+	padding-top: 71px;
+	padding-right: 50px;
+	padding-bottom: 101px;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.card-special .card-body
+{
+	background: #171126;
+}
+.rooms_title h2
+{
+	color: #150f24;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.card-special .rooms_title h2
+{
+	color: #ffffff;
+}
+.rooms_text
+{
+	margin-top: 30px;
+}
+.rooms_text p
+{
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.card-special .rooms_list ul li span
+{
+	color: #ffffff;
+}
+
+.rooms_button
+{
+	margin-top: 41px;
+}
