@@ -8,50 +8,47 @@ const Schema=mongoose.Schema;
 
 const bookingSchema= new Schema({
 
-    user_id: {
+    userID: {
         required:[true, 'User id is required']
     },
-    booking_name: {
+    bookingName: {
         type:String,
         required:[true,'Booking Name is required']
     },
-    hotel_id: {
+    hotelID: {
         required:[true, 'Hotel id is required']
     },
-    hotel_name:{
+    hotelName:{
         type:String,
         required:[true,'Hotel Name is required']
     },
-    payment_id: {
-        required: [true,'Payment id is required']
-    },
-    booking_date:{
+    bookingDate:{
         type:Date,
         required:[true,'Booking date is required.']
     },
-    checkin_date:{
+    checkinDate:{
         type:Date,
         required:[true,'Check-in date is required.']
     },
-    checkout_date:{
+    checkoutDate:{
         type:Date,
         required:[true,'Checkout date is required.']
     },
-    room_count:{
+    roomCount:{
         type:Number,
         required:[true,'Total booked rooms is required']
     },
     amenities:{
         type:String
     },
-    guest_list:{
+    guestList:{
         type: String
     },
-    amount_paid: {
+    amountPaid: {
         type:Number,
         required:[true,'Amount paid is required']
     },
-    booking_status:{
+    bookingStatus:{
         type:String,
         required:[true,'Booking status is required']
     }
