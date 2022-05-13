@@ -67,4 +67,16 @@ export const loginPost = temp_fields => {
   })
 }
 
+export const verifyLogin = () => {
+  return axios.get('/api/verifyuser')
+    .then(response => {
+      if (response.data === "S") {
+        localStorage.setItem('accesstoken', response.data)
+      } else {
+        localStorage.removeItem('accesstoken')
+      }
+    })
+    .catch(error => console.log("error", error))
+}
+
 
