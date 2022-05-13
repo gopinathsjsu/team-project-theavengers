@@ -86,6 +86,54 @@ class NavBar extends React.Component {
     this.props.history.push(`/`)
   }
 
+  Logout(event) {
+    logoutClearSession()
+    event.preventDefault()
+    localStorage.removeItem('accesstoken')
+    if (window.location.pathname === '/UserProfile' || window.location.pathname === '/Reservations')
+      this.props.history.push('/')
+    else
+      this.pushtoCurrentURL()
+  }
+
+  ResetPassword(event){
+    event.preventDefault()
+    this.props.history.push('/recoverage')
+  }
+
+  UserProfile(event) {
+    event.preventDefault()
+
+    this.props.history.push(`/UserProfile`)
+  }
+
+  Reservations(event) {
+    event.preventDefault()
+
+    this.props.history.push(`/Reservations`)
+  }
+
+  validate() {
+    let temp_email = this.state.loginfields.email
+    let temp_error = ''
+    let formIsValid = true;
+
+    if (temp_email !== '') {
+      //regular expression for email validation
+      let checker = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+      if (!checker.test(temp_email)) {
+        formIsValid = false;
+        temp_error = "*Please enter valid email.";
+      }
+    }
+
+    this.setState({
+      emailerror: temp_error
+    });
+
+    return formIsValid;
+  }
+
   render() {
     const EmptyForm = (<div></div>)
 
