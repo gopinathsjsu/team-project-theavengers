@@ -49,8 +49,7 @@
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-
-.card-special .rooms_list ul li span
+.card-special .rooms_text p
 {
 	color: #ffffff;
 }
@@ -144,7 +143,22 @@
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
-.rooms_button
+.load_more_button:hover
 {
-	margin-top: 41px;
+	background: transparent;
+}
+.load_more_button a
+{
+	display: block;
+	height: 100%;
+	line-height: 61px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+}
+.load_more_button:hover a
+{
+	color: #171126;
 }
