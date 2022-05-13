@@ -128,6 +128,102 @@ class Home extends React.Component {
 
 	}
 
+	childrenDecrement = () => {
+		// console.log("yay");
+		var value = parseInt(document.getElementById('children').value, 10);
+
+		if (value !== 0) {
+			value--;
+		}
+		// console.log(value);
+
+
+		document.getElementById('children').value = value;
+		var guest_number = parseInt(document.getElementById('adult').value, 10) + parseInt(document.getElementById('children').value, 10)
+
+
+		this.setState({
+			children: value,
+			guest_number: guest_number
+		})
+
+	}
+
+	showPlaceDetails(place) {
+		let geoDetail = JSON.stringify(place.geometry.location, null, 2).replace(/['"]+/g, '')
+		const latitude = geoDetail.substring(geoDetail.lastIndexOf("lat:") + "lat: ".length, geoDetail.lastIndexOf(","))
+		const longitude = geoDetail.substring(geoDetail.lastIndexOf("lng:") + "lng: ".length, geoDetail.lastIndexOf("}")).replace(/\s/g, '')
+
+		const fullAddress = JSON.stringify(place.formatted_address, null, 2).replace(/['"]+/g, '')
+
+		let address = JSON.stringify(place.adr_address, null, 2).replace(/['"]+/g, '')
+		address = address.replace(/(\r\n|\n|\r)/gm, "")
+
+		const streetAddress = extractFromAddress(address)
+		const city = extractFromAddress(address, 'city')
+		const state = extractFromAddress(address, 'state')
+
+		this.setState(
+			{
+				latitude, longitude,
+				fullAddress, streetAddress,
+				city, state, place
+			},
+
+		)
+	}
+
+	search = (event) => {
+		event.preventDefault()
+
+		// convert true props of checkbox into array and join the array into a string
+		const keys = Object.keys(this.state.checkbox)
+		const filteredElements = keys.filter((key) => this.state.checkbox[key] === true)
+
+
+		const temp_fields = {
+			streetAddress: this.state.streetAddress,
+			city: this.state.city,
+			state: this.state.state,
+			latitude: this.state.latitude,
+			longitude: this.state.longitude,
+			date_in: this.state.date_in.format('YYYY-MM-DD'),
+			date_out: this.state.date_out.format('YYYY-MM-DD'),
+			adult: this.state.adult,
+			children: this.state.children,
+			guest_number: this.state.guest_number,
+		}
+
+		// HotelSearchFunction(temp_fields).then(response => {
+
+		// 	let queryString = `latitude=${temp_fields.latitude}&longitude=${temp_fields.longitude}`+
+		// 						`&date_in=${temp_fields.date_in}&date_out=${temp_fields.date_out}`+
+		// 						`&adult=${this.state.adult}&children=${this.state.children}`+
+		// 						`&guest_number=${this.state.guest_number}&full_address=${this.state.fullAddress}`+
+		// 						`&city=${temp_fields.city}&street_address=${temp_fields.streetAddress}`+
+		// 						`&state=${temp_fields.state}`+
+		// 						`&amenities=${filteredElements}`
+
+		// 	this.props.history.push({
+		// 		pathname: `/HotelSearch`,
+		// 		search: `?${queryString}`,
+		// 	})
+		// })
+
+		let queryString = `latitude=${temp_fields.latitude}&longitude=${temp_fields.longitude}`+
+								`&date_in=${temp_fields.date_in}&date_out=${temp_fields.date_out}`+
+								`&adult=${this.state.adult}&children=${this.state.children}`+
+								`&guest_number=${this.state.guest_number}&full_address=${this.state.fullAddress}`+
+								`&city=${temp_fields.city}&street_address=${temp_fields.streetAddress}`+
+								`&state=${temp_fields.state}`+
+								`&amenities=${filteredElements}`
+
+		this.props.history.push({
+					pathname: `/HotelSearch`,
+					search: `?${queryString}`,
+				})
+	}
+
 
 	render() {
 
