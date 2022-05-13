@@ -81,6 +81,69 @@
 {
 	color: #ffffff;
 }
+.rooms_price
+{
+	margin-top: 33px;
+	font-size: 36px;
+	font-weight: 700;
+	color: #ff9000;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.card-special .rooms_price,
+.card-special .rooms_price span
+{
+	color: #ffffff;
+}
+.rooms_price span
+{
+	font-size: 18px;
+	font-weight: 700;
+	color: #4a4f59;
+	margin-left: 5px;
+}
+.rooms_button
+{
+	margin-top: 41px;
+}
+.card-special-panel
+{
+	position: absolute;
+	top: 27px;
+	right: -78px;
+	width: 181px;
+	height: 71px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	line-height: 71px;
+	background: #443586;
+}
+.load_more_container
+{
+	margin-top: 75px;
+}
+.load_more_button
+{
+	width: 282px;
+	height: 65px;
+	background: #171126;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 2px #171126;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
 .rooms_button
 {
 	margin-top: 41px;
