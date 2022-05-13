@@ -12,3 +12,11 @@ Team Members:
 * Frontend - React.js
 * Backend - Node.js
 * Database - Mongo DB & MYSQL
+
+Project Board: https://github.com/orgs/gopinathsjsu/projects/20
+
+## Architecture Diagram
+
+![alt_text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/documents/architecture_diagram.png)
+
+

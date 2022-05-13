@@ -2,6 +2,7 @@ const db = require("../models");
 const User = db.user;
 var bcrypt = require("bcryptjs");
 
+//User signup API
 exports.signUp=(req,res)=>{
     User.findOne({
         email:req.body.email
@@ -33,6 +34,7 @@ exports.signUp=(req,res)=>{
     });
 };
 
+// User SignIn API
 exports.signIn=(req,res)=>{
     User.findOne({email:req.body.email})
     .exec((err,user)=>{
@@ -58,6 +60,8 @@ exports.signIn=(req,res)=>{
         });
     });
 };
+
+// User Update Profile API
 exports.updateProfile = (req,res) => {
 	User.findOne({
 		email:req.body.email

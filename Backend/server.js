@@ -31,8 +31,14 @@ mongoose.connect(mongoDB, options, (err, res) => {
 });
 
 //routes
+//User routes
 const User_Route = require("./routes/user_routes");
 app.use(User_Route);
+
+//Admin routes
+const Admin_Routes=require("./routes/admin_routes");
+app.use(Admin_Routes);
+
 const PORT = process.env.PORT || 8080;
 app.listen(PORT,() => {
 	console.log(`Server is running on port ${PORT}`);

@@ -5,7 +5,7 @@ const Schema=mongoose.Schema;
 
 //Creating user schema and model
 
-const UserSchema =new Schema({
+const userSchema =new Schema({
 
 	firstName:{
 		type:String,
@@ -27,6 +27,12 @@ const UserSchema =new Schema({
 	dob:{
 		type:String
 	},
+	rewardPoints:{
+		type:String
+	},
+	member:{
+		type:String
+	},
 	mobile:{
 		type:String,
 		required:[true,'Mobile number is required']
@@ -37,7 +43,7 @@ const UserSchema =new Schema({
 	}
 });
 
-const User = mongoose.model('User',UserSchema);
+const User = mongoose.model('User',userSchema);
 
 module.exports=User;
 
