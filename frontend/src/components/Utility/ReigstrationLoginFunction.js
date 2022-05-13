@@ -4,7 +4,7 @@ import { BACKEND_URL } from '../Configuration/config'
 export const logoutClearSession = () => {
   return axios.get(BACKEND_URL+'/logout')
     .then(res => {
-      // console.log(res)
+      console.log(res)
     })
 }
 export const changePass = (temp_fields) => {
