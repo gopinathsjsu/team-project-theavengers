@@ -194,22 +194,6 @@ class Home extends React.Component {
 			guest_number: this.state.guest_number,
 		}
 
-		// HotelSearchFunction(temp_fields).then(response => {
-
-		// 	let queryString = `latitude=${temp_fields.latitude}&longitude=${temp_fields.longitude}`+
-		// 						`&date_in=${temp_fields.date_in}&date_out=${temp_fields.date_out}`+
-		// 						`&adult=${this.state.adult}&children=${this.state.children}`+
-		// 						`&guest_number=${this.state.guest_number}&full_address=${this.state.fullAddress}`+
-		// 						`&city=${temp_fields.city}&street_address=${temp_fields.streetAddress}`+
-		// 						`&state=${temp_fields.state}`+
-		// 						`&amenities=${filteredElements}`
-
-		// 	this.props.history.push({
-		// 		pathname: `/HotelSearch`,
-		// 		search: `?${queryString}`,
-		// 	})
-		// })
-
 		let queryString = `latitude=${temp_fields.latitude}&longitude=${temp_fields.longitude}`+
 								`&date_in=${temp_fields.date_in}&date_out=${temp_fields.date_out}`+
 								`&adult=${this.state.adult}&children=${this.state.children}`+
