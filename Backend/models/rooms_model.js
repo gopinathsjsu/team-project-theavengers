@@ -8,11 +8,10 @@ const Schema=mongoose.Schema;
 
 const roomSchema =new Schema({
 
-    hotel_id:{type:String,required:true},
-    roomNumber:{type:Number,required:true},
-    basePrice:{type:Number,required:true},
+    hotelId:{type:String,required:true},
     roomType:{type:String,required:true},
-    max_guests:{type:Number,required:true}
+    basePrice:{type:Number,required:true},
+    maxGuests:{type:Number,required:true}
 	
 });
 
