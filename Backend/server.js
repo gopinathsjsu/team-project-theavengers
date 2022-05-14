@@ -4,7 +4,7 @@ const app = express();
 const dbConfig = require("./config/db_config");
 const mongoose = require('mongoose');
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "*"
 };
 app.use(cors(corsOptions));
 app.use(express.json());

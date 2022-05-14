@@ -8,14 +8,12 @@ const Schema=mongoose.Schema;
 
 const bookingSchema= new Schema({
 
-    userID: {
+    userId: {
+        type:String,
         required:[true, 'User id is required']
     },
-    bookingName: {
+    hotelId: {
         type:String,
-        required:[true,'Booking Name is required']
-    },
-    hotelID: {
         required:[true, 'Hotel id is required']
     },
     hotelName:{
@@ -24,22 +22,19 @@ const bookingSchema= new Schema({
     },
     bookingDate:{
         type:Date,
-        required:[true,'Booking date is required.']
+        default:Date.now
     },
-    checkinDate:{
+    checkInDate:{
         type:Date,
         required:[true,'Check-in date is required.']
     },
-    checkoutDate:{
+    checkOutDate:{
         type:Date,
         required:[true,'Checkout date is required.']
     },
-    roomCount:{
-        type:Number,
-        required:[true,'Total booked rooms is required']
-    },
-    amenities:{
-        type:String
+    roomType:{
+        type:String,
+        required:[true,'Room Type is required']
     },
     guestList:{
         type: String

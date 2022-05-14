@@ -25,7 +25,7 @@ exports.addHotel=(req,res)=>{
         });
     }
 };
-
+//Deleting Hotel
 exports.deleteHotel = (req,res) => {
     Hotel.findOne({
         name:req.body.name,
