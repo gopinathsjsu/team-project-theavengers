@@ -28,10 +28,7 @@ const userSchema =new Schema({
 		type:String
 	},
 	rewardPoints:{
-		type:String
-	},
-	member:{
-		type:String
+		type:Number
 	},
 	mobile:{
 		type:String,
