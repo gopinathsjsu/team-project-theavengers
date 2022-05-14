@@ -13,15 +13,20 @@ const hotelSchema= new Schema({
         type:String,
         required:[true,'Hotel Name is required.']
     },
-    star:{
-        type:Number,
-        required:[true,'Star Type is required.']
-    },
-    rooms:[{
-        roomNumber:String,roomType:String,roomPrice:Number,maxGuests:Number
-    }],
     amenities:{
-        breakFast:{type:String},swimmingPool:{type:String},jacuzzi:{type:String},gym:{type:String}
+        type:String
+    },
+    minPrice:{
+        type:Number
+    },
+    maxPrice:{
+        type:Number
+    },
+    latitude:{
+        type:String
+    },
+    longitude:{
+        type:String
     },
     address:{
         type:String,
@@ -39,7 +44,7 @@ const hotelSchema= new Schema({
         type:String,
         required:[true,'Country is required']
     },
-    contact:{
+    phoneNumber:{
         type:String
     },
    
