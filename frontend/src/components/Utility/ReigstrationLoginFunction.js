@@ -4,7 +4,7 @@ import { BACKEND_URL } from '../Configuration/config'
 export const logoutClearSession = () => {
   return axios.get(BACKEND_URL+'/logout')
     .then(res => {
-      // console.log(res)
+      console.log(res)
     })
 }
 export const changePass = (temp_fields) => {
@@ -68,7 +68,7 @@ export const loginPost = temp_fields => {
 }
 
 export const verifyLogin = () => {
-  return axios.get(BACKEND_URL+'/verifyuser')
+  return axios.get('/api/verifyuser')
     .then(response => {
       if (response.data === "S") {
         localStorage.setItem('accesstoken', response.data)
@@ -78,3 +78,5 @@ export const verifyLogin = () => {
     })
     .catch(error => console.log("error", error))
 }
+
+
