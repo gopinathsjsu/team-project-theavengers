@@ -30,7 +30,7 @@ function Navbar() {
             <GoIcons.GoThreeBars onClick={showSidebar} />
           </Link>
           <Link to="/customerDashboard" className='menu-bars' style={{color:"white",textDecoration:"none"}}>
-            UberEats
+            Hotels
           </Link>
           {/* <img style={{width:'2%'}} src={UberEatsLogo} alt="Uber Eats"/> */}
         </div>

@@ -5,7 +5,7 @@ const date = require('date-and-time');
 var bcrypt = require("bcryptjs");
 const mongoose = require("mongoose");
 
-//User Sign Up
+//User signup API
 exports.signUp=(req,res)=>{
     User.findOne({
         email:req.body.email
@@ -25,7 +25,7 @@ exports.signUp=(req,res)=>{
                 password:bcrypt.hashSync(req.body.password,10),
                 dob:req.body.dob,
                 mobile:req.body.mobile
-                
+
             });
             user.save((err)=>{
                 if(err){
@@ -36,7 +36,8 @@ exports.signUp=(req,res)=>{
         }
     });
 };
-//User SignIn
+
+// User SignIn API
 exports.signIn=(req,res)=>{
     User.findOne({email:req.body.email})
     .exec((err,user)=>{
@@ -62,7 +63,8 @@ exports.signIn=(req,res)=>{
         });
     });
 };
-//User profile update
+
+// User Update Profile API
 exports.updateProfile = (req,res) => {
 	User.findOne({
 		email:req.body.email
@@ -137,7 +139,7 @@ exports.viewPrice=(req,res)=>{
      .exec((err,result)=>{
        if(err){
            res.status(500).send({message:err});
-       }  
+       }
        if (result.rewardPoints>0){
             var price=req.body.price
            if (result.rewardPoints<req.body.price){
@@ -189,4 +191,3 @@ exports.userBooking=(req,res)=>{
         );
     }
 }
-
