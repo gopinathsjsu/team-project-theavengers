@@ -15,10 +15,10 @@ Team Members:
 * Deployment - AWS EC2 with loadbalancing
 
 ## Contribution
-1. Teja <br >
-2. Saketh <br >
-3. Sarat <br >
-4. Harshini - Backend, wireframes, documentation <br >
+1. Teja <br > Backend, Database.
+2. Saketh <br >Frontend, Scrum master.
+3. Sarat <br > Frontend, Cloud deployment.
+4. Harshini - Backend, wireframes, documentation,cloud deployment <br >
 
 ## Scrum Meeting
    Monday
