@@ -9,7 +9,7 @@ Team Members:
 4. Sarat Kumar Kaniti
 
 ## Scrum Meeting
-Monday
+   Monday
 
 ## Tech Stack
 * Frontend - React.js
