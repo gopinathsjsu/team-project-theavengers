@@ -10,6 +10,9 @@ Team Members:
 
 ## Scrum Meeting
    Monday
+   
+## Sprint Sheet
+https://docs.google.com/spreadsheets/d/17-Se5hKsBax_uE0hRpGYZaho5iZaYCws/edit?usp=sharing&ouid=114020656631977488104&rtpof=true&sd=true
 
 ## Tech Stack
 * Frontend - React.js
