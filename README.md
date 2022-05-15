@@ -8,12 +8,6 @@ Team Members:
 3. Saketh Gali
 4. Sarat Kumar Kaniti
 
-## Scrum Meeting
-   Monday
-   
-## Sprint Sheet
-https://docs.google.com/spreadsheets/d/17-Se5hKsBax_uE0hRpGYZaho5iZaYCws/edit?usp=sharing&ouid=114020656631977488104&rtpof=true&sd=true
-
 ## Tech Stack
 * Frontend - React.js
 * Backend - Node.js
@@ -26,8 +20,17 @@ Saketh <br >
 Sarat <br >
 Harshini - Backend, wireframes, documentation <br >
 
+## Scrum Meeting
+   Monday
+   
+## Sprint Sheet
+https://docs.google.com/spreadsheets/d/17-Se5hKsBax_uE0hRpGYZaho5iZaYCws/edit?usp=sharing&ouid=114020656631977488104&rtpof=true&sd=true
+
 ## Project Board
 https://github.com/orgs/gopinathsjsu/projects/20
+
+## Project Journal
+https://github.com/gopinathsjsu/team-project-theavengers/blob/main/project_journal.md
 
 ## XP values
 ###### Communication 
