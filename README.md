@@ -94,11 +94,6 @@ Reasons to use API Gateway
 * View all bookings
 * Edit a booking
 * Cancel a booking
-###### Admin
-* Login to the application
-* Add a new hotel
-* Add a room
-* Add an amenity
 
 
 
