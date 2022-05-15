@@ -23,6 +23,10 @@ Project Board: https://github.com/orgs/gopinathsjsu/projects/20
 
 ![alt_text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/documents/deployment_diagram.jpeg)
 
+## Component Diagram
+
+![alt_text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/documents/component_diagram.jpeg)
+
 
 
 
