@@ -1,2 +1,7 @@
 # Project Journal 
-## Weekly scrum report
+### Harshini
+### 2nd
+### 3rd
+### 4th
+
+
