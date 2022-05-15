@@ -68,10 +68,12 @@ Reasons to choose EC2 with loadbalancer for code deployment
 * AWS EC2 is inexpensive where there is free-tier available for select types of instances.
 * Amazon EC2 offers a highly reliable environment.
 * Using a load balancer automoatically scales instances up or down to distribute load accordinf to the traffic.
+
 Reasons to use CloudFront
 * The application needs to be accessed globally from different regions. CloudFront offers edge servers to speed up delivery of web content.
 * It provides complete security to the content by provoding network and application-level protection.
 * Uses pay-per-use type policy which is economical.
+
 Reasons to use API Gateway
 * It adds and additional security layer for the APIs by defending malicious attacks like DoS attacks, XML parser exploits etc.
 * It can be used for user-authentication, rate limiting and get the statistics.
