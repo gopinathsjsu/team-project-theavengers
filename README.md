@@ -21,10 +21,10 @@ https://docs.google.com/spreadsheets/d/17-Se5hKsBax_uE0hRpGYZaho5iZaYCws/edit?us
 * Deployment - AWS EC2 with loadbalancing
 
 ## Contribution
-Harshini - Backend, wireframes, documentation
-2nd
-3rd
-4th
+Harshini - Backend, wireframes, documentation <br >
+2nd <br >
+3rd <br >
+4th <br >
 
 ## Project Board
 https://github.com/orgs/gopinathsjsu/projects/20
