@@ -29,6 +29,17 @@ Harshini - Backend, wireframes, documentation <br >
 ## Project Board
 https://github.com/orgs/gopinathsjsu/projects/20
 
+## XP values
+###### Communication 
+* We had weekly scrum calls over zoom to discuss the tasks and progress. 
+* We communicated important updates regarding the project over whatsapp and gmail.
+###### Feedback 
+* We constantly had mid-week meetings to check the work that was done and gave constructive feedback if required. 
+* We also conducted Sprint restrospective at the end of the week to discuss what went well, what could be improved.
+###### Respect 
+* We conducted our meetings, discussion professionally having respect towards each other.
+* We values everyone's opinion in the project and setup a meeting to discuss whenever there is a conflict of opinion. 
+
 ## Architecture Diagram
 
 ![alt_text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/documents/architecture_diagram.jpg)
