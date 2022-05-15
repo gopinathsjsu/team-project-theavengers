@@ -20,7 +20,14 @@ https://docs.google.com/spreadsheets/d/17-Se5hKsBax_uE0hRpGYZaho5iZaYCws/edit?us
 * Database - Mongo DB
 * Deployment - AWS EC2 with loadbalancing
 
-Project Board: https://github.com/orgs/gopinathsjsu/projects/20
+## Contribution
+Harshini - Backend, wireframes, documentation
+2nd
+3rd
+4th
+
+## Project Board
+https://github.com/orgs/gopinathsjsu/projects/20
 
 ## Architecture Diagram
 
