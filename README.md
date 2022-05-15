@@ -31,6 +31,23 @@ Project Board: https://github.com/orgs/gopinathsjsu/projects/20
 
 ![alt_text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/documents/component_diagram.jpeg)
 
+## Feature Set
+###### User
+* Register to the application
+* Login to the application
+* Search for hotels
+* Search for rooms
+* Book a room
+* Select amenities
+* Use reward points to get discount
+* Can take a subscription
+
+###### Admin
+* Login to the application
+* Add a new hotel
+* Add a room
+* Add an amenity
+
 
 
 
