@@ -8,6 +8,9 @@ Team Members:
 3. Saketh Gali
 4. Sarat Kumar Kaniti
 
+## Scrum Meeting
+Monday
+
 ## Tech Stack
 * Frontend - React.js
 * Backend - Node.js
