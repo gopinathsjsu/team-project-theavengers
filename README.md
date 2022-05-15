@@ -34,7 +34,7 @@ Project Board: https://github.com/orgs/gopinathsjsu/projects/20
 ## Design decisions
 ###### Database
 Reasons to choose a NoSQL database
-* There is not reason to specify schema which allows flexibility.
+* There is no need to specify schema which allows flexibility.
 * Using MySQL would result in a lot of sparse tables due to its rigid structure.
 * Easily scalable
 * Can handle huge amounts of data
