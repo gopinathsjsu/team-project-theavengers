@@ -15,7 +15,7 @@ Team Members:
 * Frontend - React.js
 * Backend - Node.js
 * Database - Mongo DB
-* Deployment - AWS EC2 with loadbalancing, AWS CloudFront to serve requests from all over the world, API gateway to process requests
+* Deployment - AWS EC2 with loadbalancing
 
 Project Board: https://github.com/orgs/gopinathsjsu/projects/20
 
