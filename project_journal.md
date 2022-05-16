@@ -136,3 +136,71 @@ None
 * Testig the application flow and fixing bugs.
 ###### What tasks are blocked waiting on another team member?
 None
+
+### Saketh Gali
+#### Sprint 1
+###### What tasks did I work on / complete?
+* Decide frontend stack.
+* Modify Sprint journal.
+* Modify scrum journal.  
+###### What am I planning to work on next?
+* Complete UI wireframes and modify existing ones if required.
+* Identify the required tools,start frontend development.
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 2
+###### What tasks did I work on / complete?
+* Modified the UI Wireframes, identified required functionalities and designed user login UI.
+* Updated Weekly scrum report.
+###### What am I planning to work on next?
+* Integrated and implement user hotel search UI
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 3
+###### What tasks did I work on / complete?
+* Successfully integrated user hotel search UI with backend and tested on sample data.
+* Updated Weekly scrum report
+###### What am I planning to work on next?
+* Implement Book Hotel UI
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 4
+###### What tasks did I work on / complete?
+* Successfully implemented, integrated and tested book hotel UI with backend. 
+* Updated weekly scrum report.
+###### What am I planning to work on next?
+* Implement and integrate View Bookings UI for the user.   
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 5
+###### What tasks did I work on / complete?
+* Successfully created UI where user can check his bookings
+* Updated weekly scrum.
+###### What am I planning to work on next?
+* Modify user Bookings UI where user can change/modify his bookings.
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 6
+###### What tasks did I work on / complete?
+* Implemented and tested user modified booking UI.
+* Updated weekly scrum.
+###### What am I planning to work on next?
+* Design UI where users can find final pricing.
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 7
+###### What tasks did I work on / complete?
+* Integrated UI where the user can see his final amount and checkout.
+* Updated weekly scrum.
+###### What am I planning to work on next?
+* Reward applies UI ,payment UI and complete testing of the application.
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 8
+###### What tasks did I work on / complete?
+* Successfully implemented reward points option on UI,Peer review, Documentation.
+###### What am I planning to work on next?
+* Testing the application flow and fixing bugs.
+###### What tasks are blocked waiting on another team member?
+None
+
