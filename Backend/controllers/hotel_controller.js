@@ -1,26 +1,26 @@
 const Hotel = require("../models/hotel_model");
 const Booking=require("../models/booking_model");
-const Room=require("../models/rooms_model")
+const Room = require("../models/rooms_model")
 const mongoose = require("mongoose");
-
 
 //Searching hotel base on city name
 exports.searchHotels =  (req,res) => {
-    Hotel.find({
-       city:req.params.city
-   })
-   .then((hotels) => {
-       if(hotels.length==0)
-           return res.status(200).send({results:"Hotels not found"});
-       res.status(200).send({results:hotels});
-       
-   })
-   .catch(err => {
-       console.log(err);
-       res.status(500).send("Error in fetching")
-   });
+     Hotel.find({
+        city:req.params.city
+    })
+    .then((hotels) => {
+        if(hotels.length==0)
+            return res.status(200).send({results:"Hotels not found"});
+        res.status(200).send({results:hotels});
+        
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).send("Error in fetching")
+    });
 };
-//Get room availability
+
+//checking room availablity
 exports.roomsAvailability=async (req,res)=>{
     //console.log(req.params.hotelId,req.params.checkInDate,req.params.checkOutDate)
     const {hotelId,checkInDate,checkOutDate} = req.params;
