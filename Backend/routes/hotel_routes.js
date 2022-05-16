@@ -1,6 +1,7 @@
 const express = require('express');
 const controller = require("../controllers/hotel_controller");
 const router = express();
-router.get('/searchhotels',controller.searchHotels);
-router.get('/getrooms',controller.getRooms);
-module.exports = router;
+router.get('/searchhotels/:city',controller.searchHotels);
+router.get('/roomsavailability/:hotelId/:checkInDate/:checkOutDate',controller.roomsAvailability);
+router.get('/searchhotelid/:hotelId',controller.searchHotelId);
+module.exports = router;    
