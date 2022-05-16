@@ -2,11 +2,12 @@ import React from 'react';
 import { withRouter } from 'react-router-dom'
 import Registration from '../Registration/Registration'
 import { logoutClearSession, loginPost, verifyLogin } from '../Utility/ReigstrationLoginFunction'
-import imageLogo from './Images/logo.png'
+import imageLogo from './Images/logoavg.png'
 // import neccessary components
 import {
   Form, FormGroup, Input
 } from 'reactstrap'
+import AdminLogin from '../Admin/AdminLogin';
 
 class NavBar extends React.Component {
   constructor() {
@@ -25,15 +26,15 @@ class NavBar extends React.Component {
   }
 
   compoenentDidMount(prevProps) {
-    if (prevProps.location.search !== this.props.location.search || prevProps.location.state !== this.props.location.state) {
-      //verifyLogin()
-		}
+    // if (prevProps.location.search !== this.props.location.search || prevProps.location.state !== this.props.location.state) {
+    //   verifyLogin()
+		// }
   }
 
 	componentDidUpdate(prevProps) {
-		if (prevProps.location.search !== this.props.location.search || prevProps.location.state !== this.props.location.state) {
-      //verifyLogin()
-		}
+		// if (prevProps.location.search !== this.props.location.search || prevProps.location.state !== this.props.location.state) {
+    //   verifyLogin()
+		// }
   }
 
   updateFields(event) {
@@ -65,7 +66,7 @@ class NavBar extends React.Component {
           if (window.location.pathname === '/recoverage' || window.location.pathname === '/Accesscode')
             this.props.history.push('/')
         } else {
-          temp_loginerror = "*Please enter valid credentials (email or password) or reset password"
+          temp_loginerror = "*Please enter valid c  redentials (email or password) or reset password"
           this.setState({ loginerror: temp_loginerror })
           empty_fields["email"] = this.state.loginfields.email
         }
@@ -90,6 +91,17 @@ class NavBar extends React.Component {
     logoutClearSession()
     event.preventDefault()
     localStorage.removeItem('accesstoken')
+    localStorage.removeItem('userName')
+    localStorage.removeItem('email')
+    localStorage.removeItem('rewardPoints')
+    this.setState({
+      loginfields: {
+        email: '',
+        password: '',
+      },
+      emailerror: '',
+      loginerror: ''
+    })
     if (window.location.pathname === '/UserProfile' || window.location.pathname === '/Reservations')
       this.props.history.push('/')
     else
@@ -220,17 +232,17 @@ class NavBar extends React.Component {
         {/*LEFT SIDE*/}
         <div className="navbar-left form-inline my-2 my-lg-0" >
           <div className="col-auto pl-0 custom-row" onClick={this.Home.bind(this)}>
-            <img className="imageLogo" src={imageLogo} alt="logologologo"></img>
-            <div>SPARTAN HOTELS</div>
+            <img className="imageLogo mt-2" src={imageLogo} alt="logologologo" style={{width:"40px",height:"40px"}}></img>
+            <div style={{color:"ActiveBorder",fontSize:"30px",fontStyle:"italic"}}><strong>Avengers Group of Hotels</strong></div>
           </div>
           {localStorage.accesstoken ? EmptyForm : <div className="">|</div>}
           {localStorage.accesstoken ? EmptyForm : <Registration />}
+          {/* {localStorage.accesstoken ? EmptyForm : <AdminLogin/>} */}
         </div>
 
 
         {/*RIGHT SIDE*/}
         <div className="navbar-right form-inline my-2 my-lg-0" >
-
           {localStorage.accesstoken ? ProfileLink : EmptyForm}
           {localStorage.accesstoken ? ReservationLink : EmptyForm}
           {localStorage.accesstoken ? EmptyForm : ResetPasswordLink}
