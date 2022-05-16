@@ -58,7 +58,7 @@ https://github.com/gopinathsjsu/team-project-theavengers/blob/main/project_journ
 ## Use case Diagram
 ![alt text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/Images/usecase_202.jpeg)
 
-## Clad=ss Diagram
+## Class Diagram
 ![alt_text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/Images/classDiagram.png)
 
 ## Design decisions
