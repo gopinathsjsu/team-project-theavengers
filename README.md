@@ -58,6 +58,7 @@ https://github.com/gopinathsjsu/team-project-theavengers/blob/main/project_journ
 ## Use case Diagram
 ![alt text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/Images/usecase_202.jpeg)
 
+
 ## Design decisions
 ###### Database
 Reasons to choose a NoSQL database
@@ -119,6 +120,23 @@ Reasons to use API Gateway
 * Edit a booking
 * Cancel a booking
 
+# HOME PAGE AND LOGIN
+![alt text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/Images/Screen%20Shot%202022-05-15%20at%2010.31.56%20PM.png)
 
+# REGISTRATION
+![alt text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/Images/Screen%20Shot%202022-05-15%20at%2010.32.12%20PM.png)
 
+# AUTO COMPLETE FEATURE 
+![alt text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/Images/Screen%20Shot%202022-05-15%20at%2010.33.37%20PM.png)
 
+# HOTEL SEARCH PAGE
+![alt text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/Images/Screen%20Shot%202022-05-15%20at%2010.34.04%20PM.png)
+
+# ROOM TYPES
+![alt text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/Images/Screen%20Shot%202022-05-15%20at%2010.34.21%20PM.png)
+
+# CHECKOUT SUMMARY
+![alt text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/Images/Screen%20Shot%202022-05-15%20at%2010.34.39%20PM.png)
+
+# RESERVATIONS
+![alt text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/Images/Screen%20Shot%202022-05-15%20at%2010.34.58%20PM.png)
