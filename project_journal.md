@@ -70,104 +70,69 @@ Waiting for final pricing logic test on other teammates
 End of sprint
 ###### What tasks are blocked waiting on another team member?
 None
-### 2nd
+### Teja Ramisetty
 #### Sprint 1
 ###### What tasks did I work on / complete?
+* Decide frontend stack.
+* Modify sprint journal.
+* Modify scrum journal.  
 ###### What am I planning to work on next?
+* Complete UI frames and modify existing ones if required.
+* Identify the required tools,start database designing and backend developement.
 ###### What tasks are blocked waiting on another team member?
+None
 #### Sprint 2
 ###### What tasks did I work on / complete?
+* Modified the UI Wireframes, identify required models and create collection in database.
+* Updated Weekly scrum report.
 ###### What am I planning to work on next?
+* Populate sample data into the user model and write backend API calls for user signin/signup. 
 ###### What tasks are blocked waiting on another team member?
+None
 #### Sprint 3
 ###### What tasks did I work on / complete?
+* Populated sample user data and successfully tested user signin/signup api calls.
+* Updated Weekly scrum report
 ###### What am I planning to work on next?
+* Check room availability feature based on user selected hotel, checkin and checkout dates .
 ###### What tasks are blocked waiting on another team member?
+None
 #### Sprint 4
 ###### What tasks did I work on / complete?
+* Successfully implemented room availability check API logic based on user preferences. 
+* Updated weekly scrum report.
 ###### What am I planning to work on next?
+* User Hotel booking API implementation.   
 ###### What tasks are blocked waiting on another team member?
+None
 #### Sprint 5
 ###### What tasks did I work on / complete?
+* Successfully implemented and tested hotel booking API for multiple users and hotels.
+* Updated weekly scrum.
 ###### What am I planning to work on next?
+* Implement cancel/modify API for user bookings.
 ###### What tasks are blocked waiting on another team member?
+None
 #### Sprint 6
 ###### What tasks did I work on / complete?
+* Successfully implemented and tested cancel/modify user bookings API.
+* Updated weekly scrum.
 ###### What am I planning to work on next?
+* Integrate and test dynamic pricing logic on different dates.
 ###### What tasks are blocked waiting on another team member?
+None
 #### Sprint 7
 ###### What tasks did I work on / complete?
+* Implemented and tested dynamic pricing API .
+* Updated weekly scrum.
 ###### What am I planning to work on next?
+* Testig entire application and fixing bugs
 ###### What tasks are blocked waiting on another team member?
+None
 #### Sprint 8
 ###### What tasks did I work on / complete?
+* Fixed reward points bugs, Peer review, Documentation.
 ###### What am I planning to work on next?
+* Testig the application flow and fixing bugs.
 ###### What tasks are blocked waiting on another team member?
-### 3rd
-#### Sprint 1
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 2
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 3
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 4
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 5
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 6
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 7
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 8
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-### 4th
-#### Sprint 1
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 2
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 3
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 4
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 5
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 6
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 7
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-#### Sprint 8
-###### What tasks did I work on / complete?
-###### What am I planning to work on next?
-###### What tasks are blocked waiting on another team member?
-
-
+None
