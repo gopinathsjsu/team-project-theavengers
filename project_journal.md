@@ -1,5 +1,5 @@
 # Project Journal 
-### Harshini
+## Harshini
 #### Sprint 1
 ###### What tasks did I work on / complete?
 * Worked on requirements analysis
@@ -70,7 +70,7 @@ Waiting for final pricing logic test on other teammates
 End of sprint
 ###### What tasks are blocked waiting on another team member?
 None
-### Teja Ramisetty
+## Teja Ramisetty
 #### Sprint 1
 ###### What tasks did I work on / complete?
 * Decide frontend stack.
@@ -137,7 +137,7 @@ None
 ###### What tasks are blocked waiting on another team member?
 None
 
-### Saketh Gali
+## Saketh Gali
 #### Sprint 1
 ###### What tasks did I work on / complete?
 * Decide frontend stack.
@@ -203,4 +203,74 @@ None
 * Testing the application flow and fixing bugs.
 ###### What tasks are blocked waiting on another team member?
 None
+
+
+## Sarath
+#### Sprint 1
+###### What tasks did I work on / complete?
+* Decide frontend stack.
+* Modify Sprint journal.
+* Modify scrum journal.  
+###### What am I planning to work on next?
+* Revise UI frames if required.
+* Identify the required tools and start frontend development.
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 2
+###### What tasks did I work on / complete?
+* Modified the UI Wireframes and started the Front End Development for the application.
+* Updated Weekly scrum report
+###### What am I planning to work on next?
+* Design interface for Landing screen, Login and Register Page
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 3
+###### What tasks did I work on / complete?
+* Designed the UI for Landing, Login and Register page.
+* Updated Weekly scrum report
+###### What am I planning to work on next?
+* Integrate Login and Register page with backend
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 4
+###### What tasks did I work on / complete?
+* Integrated login and register page with the backend.
+* Updated weekly scrum report.
+###### What am I planning to work on next?
+* Implement and integrated search hotel functionality based on user preferences.
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 5
+###### What tasks did I work on / complete?
+* Successfully integrated hotel search functionality with backend and tested all the features.
+* Updated weekly scrum
+###### What am I planning to work on next?
+* Implement room availability search functionality for the user selected hotel and implement reward points logic.
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 6
+###### What tasks did I work on / complete?
+* Implemented and tested room availability functionality and reward points logic.
+* Updated weekly scrum.
+###### What am I planning to work on next?
+* Integrate and test dynamic pricing logic on different dates.
+* Integrate modify/cancel booking logic.
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 7
+###### What tasks did I work on / complete?
+* Integrated dynamic pricing and modify/cancel booking functionality.
+* Updated weekly scrum.
+###### What am I planning to work on next?
+* Testing entire application and fixing bugs
+###### What tasks are blocked waiting on another team member?
+None
+#### Sprint 8
+###### What tasks did I work on / complete?
+* Fixed reward points bugs, Peer review, Documentation.
+###### What am I planning to work on next?
+* Testing the application flow and fixing bugs.
+###### What tasks are blocked waiting on another team member?
+None
+
 
