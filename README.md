@@ -55,6 +55,9 @@ https://github.com/gopinathsjsu/team-project-theavengers/blob/main/project_journ
 
 ![alt_text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/documents/component_diagram.jpeg)
 
+## Use case Diagram
+![alt text](https://github.com/gopinathsjsu/team-project-theavengers/blob/main/Images/usecase_202.jpeg)
+
 ## Design decisions
 ###### Database
 Reasons to choose a NoSQL database
