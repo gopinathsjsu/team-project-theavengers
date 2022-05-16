@@ -3,7 +3,7 @@ import axios from 'axios'
 import { withRouter } from 'react-router-dom'
 import { Table, Button } from 'reactstrap';
 
-
+import {BACKEND_URL} from '../Configuration/config'
 
 class RoomPage extends React.Component {
 	constructor(props) {
@@ -100,28 +100,24 @@ class RoomPage extends React.Component {
 	}
 
 	async componentDidMount() {
-		//const roomSearchQuery = `/api/search/hotels/${this.state.hotel_id}/?date_in=${this.state.date_in}&date_out=${this.state.date_out}`
-		//const hotelSearchQuery = `/api/search/hotels?city=${this.state.city}&date_in=${this.state.date_in}&date_out=${this.state.date_out}&hotel_id=${this.state.hotel_id}`
-
-		//const rooms = (await axios.get(roomSearchQuery)).data
-		// const hotel = (await axios.get(hotelSearchQuery)).data
-		// rooms.results.forEach((eachRoomResult, index) => {
-		// 	rooms.results[index].desired_quantity = 0;
-		// })
-		// this.setState({
-		// 	rooms, hotel
-		// })
+		
 		let data={
 			results:JSON.parse(localStorage.getItem("hotelDetails"))
 		}
 		let roomsData={
 			results:[
-				{bed_type:"Single",price:126.1,capacity:2,quantity:10,desired_quantity:0},
-				{bed_type:"Double",price:196.1,capacity:2,quantity:5,desired_quantity:0},
-				{bed_type:"Suite",price:326.1,capacity:2,quantity:4,desired_quantity:0}
+				// {bed_type:"Single",price:126.1,capacity:2,quantity:10,desired_quantity:0},
+				// {bed_type:"Double",price:196.1,capacity:2,quantity:5,desired_quantity:0},
+				// {bed_type:"Suite",price:326.1,capacity:2,quantity:4,desired_quantity:0}
 			]
 		}
-		this.setState({hotel:data,rooms:roomsData});
+		const query = BACKEND_URL+"/roomsavailability/"+this.state.hotel_id+"/"+this.state.date_in+"/"+this.state.date_out;
+		const rooms = (await axios.get(query)).data
+		console.log("Check",rooms);
+		let data1={
+			results:rooms
+		}
+		this.setState({hotel:data,rooms:data1});
 	}
 
 	handleEachRoomQuantity = (event) => {
@@ -411,8 +407,8 @@ class RoomPage extends React.Component {
 							{this.state.verifyCheckout ? <div className="room-page-verify-checkout"> Unable to checkout </div> : null}
 							{this.state.verifyRooms ? <div className="room-page-verify-checkout"> Please select a room </div> : null}
 							{this.state.verifyGuests ? <div className="room-page-verify-checkout"> Please select enough rooms to accomodate all guests </div> : null}
-							{!localStorage.accesstoken? null : <p style={{ color: '#f977a1' }}>Please login to proceed to check out</p>}
-							<Button disabled={localStorage.accesstoken || parseInt(this.handleRoomPrice())===0} className="home-submit-button btn btn-primary py-3 px-5 mb-5" onClick={this.Checkout.bind(this)}>Checkout</Button>
+							{localStorage.accesstoken? null : <p style={{ color: '#f977a1' }}>Please login to proceed to check out</p>}
+							<Button disabled={!localStorage.accesstoken || parseInt(this.handleRoomPrice())===0} className="home-submit-button btn btn-primary py-3 px-5 mb-5" onClick={this.Checkout.bind(this)}>Checkout</Button>
 
 						</div>
 					</div>
