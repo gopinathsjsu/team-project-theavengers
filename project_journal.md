@@ -77,7 +77,7 @@ None
 * Modify sprint journal.
 * Modify scrum journal.  
 ###### What am I planning to work on next?
-* Complete UI frames and modify existing ones if required.
+* Complete UI wireframes and modify existing ones if required.
 * Identify the required tools,start database designing and backend developement.
 ###### What tasks are blocked waiting on another team member?
 None
