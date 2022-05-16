@@ -83,7 +83,7 @@ None
 None
 #### Sprint 2
 ###### What tasks did I work on / complete?
-* Modified the UI Wireframes, identify required models and create collection in database.
+* Modified the UI Wireframes, identified required models and create collection in database.
 * Updated Weekly scrum report.
 ###### What am I planning to work on next?
 * Populate sample data into the user model and write backend API calls for user signin/signup. 
