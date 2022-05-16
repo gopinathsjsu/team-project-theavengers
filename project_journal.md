@@ -78,7 +78,8 @@ None
 * Modify scrum journal.  
 ###### What am I planning to work on next?
 * Complete UI wireframes and modify existing ones if required.
-* Identify the required tools,start database designing and backend developement.
+* Identify the required tools, start database designing and backend development
+.
 ###### What tasks are blocked waiting on another team member?
 None
 #### Sprint 2
@@ -94,7 +95,7 @@ None
 * Populated sample user data and successfully tested user signin/signup api calls.
 * Updated Weekly scrum report
 ###### What am I planning to work on next?
-* Check room availability feature based on user selected hotel, checkin and checkout dates .
+* Check room availability feature based on user selected hotel, checking and checkout dates .
 ###### What tasks are blocked waiting on another team member?
 None
 #### Sprint 4
@@ -126,14 +127,14 @@ None
 * Implemented and tested dynamic pricing API .
 * Updated weekly scrum.
 ###### What am I planning to work on next?
-* Testig entire application and fixing bugs
+* Testing entire application and fixing bugs
 ###### What tasks are blocked waiting on another team member?
 None
 #### Sprint 8
 ###### What tasks did I work on / complete?
 * Fixed reward points bugs, Peer review, Documentation.
 ###### What am I planning to work on next?
-* Testig the application flow and fixing bugs.
+* Testing the application flow and fixing bugs.
 ###### What tasks are blocked waiting on another team member?
 None
 
