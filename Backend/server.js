@@ -18,9 +18,7 @@ var options = {
 
 //Mongo DB Connection
 const mongoDB='mongodb+srv://tejaramisetty:cmpe2022211@cluster0.sz9jt.mongodb.net/HotelBooking?retryWrites=true&w=majority'
-
 mongoose.connect(mongoDB, options, (err, res) => {
-
   if (err) {
       console.log(err);
       console.log(`MongoDB Connection Failed`);
@@ -38,6 +36,10 @@ app.use(User_Route);
 //Admin routes
 const Admin_Routes=require("./routes/admin_routes");
 app.use(Admin_Routes);
+
+//Hotel routes
+const Hotel_Routes=require("./routes/hotel_routes");
+app.use(Hotel_Routes)
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT,() => {

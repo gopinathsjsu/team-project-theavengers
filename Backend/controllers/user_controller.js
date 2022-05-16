@@ -1,21 +1,25 @@
 const User = require("../models/user_model");
 const Booking = require("../models/booking_model");
+const Hotel=require("../models/hotel_model");
 const Room=require("../models/rooms_model");
 const date = require('date-and-time');
 var bcrypt = require("bcryptjs");
 const mongoose = require("mongoose");
 
 //User signup API
-exports.signUp=(req,res)=>{
+exports.signUp=async (req,res)=>{
     User.findOne({
         email:req.body.email
     })
     .exec((err,user)=>{
+        
         if (err){
             res.status(500).send({message:err});
+            //res.status(500);
         }
         if(user){
-            res.status(404).send({message:"User already exists."});
+            res.status(400).send({message:"User already exists."});
+            //res.status(400)
         }
         if(!user){
             const user=new User({
@@ -24,15 +28,24 @@ exports.signUp=(req,res)=>{
                 email:req.body.email,
                 password:bcrypt.hashSync(req.body.password,10),
                 dob:req.body.dob,
-                mobile:req.body.mobile
+                mobile:req.body.mobile,
+                rewardPoints:0      
+            });
 
-            });
-            user.save((err)=>{
-                if(err){
-                    res.status(500).send({message:err});
-                }
-                res.send({message:"User was registered successfully"});
-            });
+            user.save()
+            .then(response => {
+                res.send({
+                    id:user._id,
+                    email:user.email,
+                    name:user.firstName+" "+user.lastName,
+                    rewardPoints:user.rewardPoints,
+                    isAuth:true
+                });
+            })
+            .catch(err => {
+                console.log(err);
+                res.status(500).send("Unsuccessful");
+            });            
         }
     });
 };
@@ -59,7 +72,10 @@ exports.signIn=(req,res)=>{
         }
         res.status(200).send({
             id:user._id,
-            email:user.email
+            email:user.email,
+            name:user.firstName+" "+user.lastName,
+            rewardPoints:user.rewardPoints,
+            isAuth:true
         });
     });
 };
@@ -92,102 +108,79 @@ exports.updateProfile = (req,res) => {
 			if(req.body.password){
 				user.password = bcrypt.hashSync(req.body.password,10);
 			}
-			user.save((err) => {
-				if(err) {
-					res.status(500).send({message:err});
-					return;
-				}
-				res.send({message:"Details updated successfully"});
-			});
+			user.save()
+            .then(response=>{
+                res.send("Successfullyupdated details")
+            })
+            .catch(err=>{
+                res.status(500).send("Details are not updated.Please try again");
+            })
 		});
 };
+ 
 //Price Details
-exports.viewPrice=(req,res)=>{
-    Room.findOne({
-        hotel_id:req.body.hotel_id,
-        roomType:req.body.roomType
-    })
-    .exec((err,hotelDetails)=>{
-        if(err){
-            res.status(500).send({message:err});
-        }
-        var date1 =new Date(req.body.checkInDate);
-        var date2 =new Date(req.body.checkOutDate);
-        const days=parseInt((date2-date1)/(1000 * 60 * 60 * 24));
-        const price=(hotelDetails.basePrice)*days
-        const checkInMonth=(date1.getMonth())+1;
-        const checkOutMonth=(date2.getMonth())+1;
-        //Thanks giving Christmas pricing
-        if((date1.getDate()+1>19 && checkInMonth==11)||checkInMonth==12){
-            price+=(price*0.20);
-        }
-        //Summer Season pricing
-        else if((checkInMonth==4||checkInMonth==5)||(checkOutMonth==4||checkOutMonth==5)){
-            price+=(price*0.20);
-        }
-        //Weekend Prcing
-        else if (date1.getDay()>date2.getDay()||date2.getDay()==7){
-            price+=(price*0.15);
-        }
-    });
- };
+
  //Redeem reward points
  exports.redeemRewards=(req,res)=>{
-     User.findOne({
-         _id:mongoose.Types.ObjectId(req.body._id)
-     })
-     .exec((err,result)=>{
-       if(err){
-           res.status(500).send({message:err});
-       }
-       if (result.rewardPoints>0){
-            var price=req.body.price
-           if (result.rewardPoints<req.body.price){
-            price-=result.rewardPoints;
-            User.findOneAndUpdate({_id:mongoose.Types.ObjectId(req.body._id)},{rewardPoints:0}).exec((error,results)=>{
-                if (error){
-                    res.status(500).send({message:err});
-                }
-            })
-           }
-           else{
-               User.findOneAndUpdate({_id:mongoose.Types.ObjectId(req.body._id)},{rewardPoints:result.rewardPoints-price})
-               .exec((error,results)=>{
-                   if(error){
-                       res.status(500).send({message:err});
-                   }
-               })
-               price=0
-           }
-           res.send({price})
-       }
-       else{
-           res.send({message:"You dont have any reward points"})
-       }
-     });
- };
+    User.findOne({
+        _id:mongoose.Types.ObjectId(req.params.id)
+    }).then(resp => {
+        console.log(resp);
+        resp.password=undefined;
+        res.status(200).send(resp);
+    })
+    .catch(err => {
+        res.status(500).send("Internal Error");
+    })
+    
+}
+
 //User Booking
 exports.userBooking=(req,res)=>{
+    console.log(req.body);
     if(req.body){
         const booking=new Booking({
             userId:req.body.userId,
             hotelId:req.body.hotelId,
             hotelName:req.body.name,
+            bookingDate:new Date().toJSON().slice(0, 10),
             checkInDate:req.body.checkInDate,
             checkOutDate:req.body.checkOutDate,
             roomType:req.body.roomType,
+            roomCount:req.body.roomCount,
+            roomPrice:req.body.roomPrice,
             guestList:req.body.guestList,
             amountPaid:req.body.amountPaid,
             bookingStatus:req.body.bookingStatus,
-            bookingDate:Date.now()
+            bookingID:req.body.bookingID
         });
-        booking.save((err)=>{
+        booking.save((err,resp)=>{
+            console.log(err,resp);
             if (err){
                 res.status(500).send({message:err});
             }
-            res.send({message:"Successfully booked"});
-        }
-
-        );
+            console.log("check-back",req.body.roomPrice*req.body.roomCount);
+            User.findOneAndUpdate({ _id:mongoose.Types.ObjectId(req.body.userId)},{ $inc: { rewardPoints:req.body.roomPrice*req.body.roomCount}})            
+            .then(response=>{
+                res.status(200).send("Successfully booked")
+            })
+            .catch(err=>{
+                console.log(err);
+                res.status(500).send({message:err})
+            })
+        });
     }
 }
+
+//View all bookings
+//Cancel Booking
+//Booking on BookingID
+
+
+
+
+
+
+
+
+

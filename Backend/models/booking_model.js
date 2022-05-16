@@ -16,6 +16,9 @@ const bookingSchema= new Schema({
         type:String,
         required:[true, 'Hotel id is required']
     },
+    bookingID:{
+        type:String
+    },
     hotelName:{
         type:String,
         required:[true,'Hotel Name is required']
@@ -35,6 +38,13 @@ const bookingSchema= new Schema({
     roomType:{
         type:String,
         required:[true,'Room Type is required']
+    },
+    roomCount:{
+        type:Number,
+        required:[true,'Room Count is required']
+    },
+    roomPrice:{
+        type:Number
     },
     guestList:{
         type: String

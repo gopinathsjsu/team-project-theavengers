@@ -9,17 +9,23 @@ const Schema=mongoose.Schema;
 
 const hotelSchema= new Schema({
 
-    name:{
-        type:String,
-        required:[true,'Hotel Name is required.']
-    },
+    name:{type:String,required:[true,'Hotel Name is required.']},
     amenities:{
         type:String
     },
-    minPrice:{
+    singleRoomCount:{
         type:Number
     },
-    maxPrice:{
+    doubleRoomCount:{
+        type:Number
+    },
+    suiteRoomCount:{
+        type:Number
+    },
+    min_price:{
+        type:Number
+    },
+    max_price:{
         type:Number
     },
     latitude:{
@@ -31,6 +37,10 @@ const hotelSchema= new Schema({
     address:{
         type:String,
         required:[true,'Address is required.']
+    },
+    price_range:{
+        type:String,
+        required:[true,'Price range is required.']
     },
     city:{
         type:String,
@@ -44,7 +54,7 @@ const hotelSchema= new Schema({
         type:String,
         required:[true,'Country is required']
     },
-    phoneNumber:{
+    phone_number:{
         type:String
     },
    
